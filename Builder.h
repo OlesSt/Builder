@@ -2,6 +2,8 @@
 #define BUILDER_H
 #include <iostream>
 
+namespace BuilderPattern
+{
 class Product
 {
 public:
@@ -29,6 +31,7 @@ public:
     virtual void    BuildAtribute_2() = 0;
     virtual void    BuildAtribute_3() = 0;
     virtual Product getProduct()      = 0;
+    virtual ~IBuilder(){}
 
 };
 
@@ -60,4 +63,5 @@ public:
 private:
     IBuilder* _builder;
 };
+}
 #endif // BUILDER_H

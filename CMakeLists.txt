@@ -16,6 +16,7 @@ add_executable(Builder
   main.cpp
 
   builder.h
+  fluentbuilder.h
 )
 target_link_libraries(Builder Qt${QT_VERSION_MAJOR}::Core)
 
